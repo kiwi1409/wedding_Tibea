@@ -12,6 +12,14 @@
     min-height: 100%;
 }
 
+.parallax { 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 .story {
     background-image: url('\\assets\\main_photo_fb.jpg');
@@ -45,38 +53,11 @@
     letter-spacing: 10px;
 }
 
-.caption span.main-border {
-    background-color: #111;
-    color: #fff;
-    padding: 18px;
-    font-size: 25px;
-    letter-spacing: 10px;
-}
-
-.caption span.main-border.fix-text {
-    position: fixed;
-    top: 10px;
-}
-
 body, html {
     height: 100%;
     margin: 0;
     font: 400 15px/1.8 "Lato", sans-serif;
     color: #777;
-}
-
-parallax { 
-    /* The image used */
-    background-image: url("\\assets\\tab_icon.jpg");
-  
-    /* Set a specific height */
-    height: 500px; 
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 footer { 
