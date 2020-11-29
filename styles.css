@@ -1,15 +1,10 @@
-.intro, .story, .invitation, .instructions {
+.intro, .story, .invitation, .instructions, .schedule {
     position: relative;
     opacity: 0.65;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.intro {
-    background-image: url('\\assets\\main_photo.jpg');
-    min-height: 100%;
 }
 
 .parallax { 
@@ -20,37 +15,107 @@
     background-size: cover;
 }
 
+.intro {
+    background-image: url('\\assets\\main_photo.jpg');
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 0;
+}
 
 .story {
     background-image: url('\\assets\\main_photo_fb.jpg');
+    min-width: 100%;
     min-height: 100%;
+    z-index: 0;
 }
 
 .invitation {
     background-image: url('\\assets\\main_photo_view.jpg');
+    min-width: 100%;
     min-height: 100%;
+    z-index: 0;
 }
 
 .instructions {
-    background-image: url('\\assets\\main_photo_chill.jpg');
+    background-image: url('\\assets\\wedding_frame_photo.jpg');
+    min-width: 100%;
     min-height: 100%;
+    z-index: 0;
+}
+
+.schedule {
+    background-image: url('\\assets\\schedule_background.jpg');
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 0;
 }
 
 .caption {
     position: absolute;
     left: 0;
-    top: 50%;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.caption1 {
+    position: absolute;
+    left: 0;
+    top: 40%;
     width: 100%;
     text-align: center;
     color: #000;
 }
 
 .caption span.border {
-    background-color: #111;
+    background-color: rgba(17, 17, 17, 0.8);
+    border-radius: 20px;
     color: #fff;
+    margin-left: auto;
+    margin-right: auto;
     padding: 18px;
     font-size: 25px;
+    font-weight: bold;
     letter-spacing: 10px;
+}
+
+.caption1 span.main-border::after {
+    background-color: rgba(17, 17, 17, 0.8);
+    border-radius: 20px;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 18px;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 10px;
+}
+
+.caption1 span.main-border {
+    background-color: rgba(17, 17, 17, 0.8);
+    border-radius: 20px;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 18px;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 10px;
+}
+
+.textborder {
+    background-color: rgba(17, 17, 17, 0.8);
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width:80%;
+    text-indent:5vw;
+    color: #fff;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 7px;
 }
 
 body, html {
@@ -59,6 +124,29 @@ body, html {
     font: 400 15px/1.8 "Lato", sans-serif;
     color: #777;
 }
+
+.scheduletable {
+    background-color: rgba(17, 17, 17, 0.8);
+    border-radius: 20px;
+    margin: auto;
+    width:80%;
+    text-indent:5vw;
+    color: #fff;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 7px;
+  }
+
+  table {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  th {
+      font-weight: bold;
+      font-size: 40px;
+  }
 
 ul.no-bullets {
     list-style-type: none;
